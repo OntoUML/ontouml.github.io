@@ -1,0 +1,5 @@
+# Default ignored paths
+**/*.DS_Store
+_site/
+
+# Additional ignored paths

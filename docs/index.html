@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+
+    
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Project Template | project-template</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Project Template" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Turn your markdown files into a website in your OntoUML project." />
+<meta property="og:description" content="Turn your markdown files into a website in your OntoUML project." />
+<meta property="og:site_name" content="project-template" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Project Template" />
+<script type="application/ld+json">
+{"description":"Turn your markdown files into a website in your OntoUML project.","headline":"Project Template","@type":"WebSite","url":"/","name":"project-template","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- <link rel="stylesheet" href="/assets/css/style.css?v=8aeab1841283475b99297335058a1d3dc0e52460"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Project Template</h1>
+      <h2 class="project-tagline">Turn your markdown files into a website in your OntoUML project.</h2>
+      
+        <a href="https://github.com/OntoUML/project-template" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="project-template">Project Template</h1>
+
+<p>This project template helps you to easily create a dedicated website for projects in the <a href="https://github.com/OntoUML">OntoUML</a> organization.</p>
+
+<h2 id="how-to-start">How to Start</h2>
+
+<p>How about turning your markdown files into beautiful webpages to better document and advertise your project. Just follow these steps and you’ll be ready in no time.</p>
+
+<h3 id="first-step---create-a-new-repository">First Step - Create a New Repository</h3>
+
+<p>Start by creating a new repository based on this template by clicking on <a href="https://github.com/OntoUML/project-template/generate"><code class="language-plaintext highlighter-rouge">Use this template</code></a> at the top of the repository’s page. This creating a new repository keeping all files and folder contained in this one.</p>
+
+<p><img src="/resources/use-this.png" alt="" /></p>
+
+<p>These folders and files have the following roles:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.
+├── _layouts           # folder containing the custom layout used in the OntoUML organization
+├── .github            # folder containing the necessary actions to build your website
+├── assets             # folder containing assets for the the website's style
+├── docs               # folder containing the generated website
+├── _config.yml        # file containing all Jekyll configurations
+├── 404.md             # file used to generate "Not Found" pages
+├── Gemfile            # Ruby configuration file used for Jekyll
+├── Gemfile.lock       # Ruby configuration file used for Jekyll
+</code></pre></div></div>
+
+<p>If you are not familiar with <a href="https://jekyllrb.com/">Jekyll</a> there is not need to modify any of these files, but once they are part of repository you are free to use them to best fit your needs.</p>
+
+<h3 id="second-step---setting-up-the-repository">Second Step - Setting Up The Repository</h3>
+
+<p>Go to your repository settings under <code class="language-plaintext highlighter-rouge">Settings &gt; Pages</code> and change the <code class="language-plaintext highlighter-rouge">Source</code> branch to <code class="language-plaintext highlighter-rouge">main</code> and the folder next to it to <code class="language-plaintext highlighter-rouge">/docs</code>.</p>
+
+<p><img src="/resources/settings-pages.png" alt="" /></p>
+
+<h3 id="thirdfinal-step---write-that-markdown">Third/Final Step - Write That Markdown!</h3>
+
+<p>Jekyll now will generate webpages based on every markdown file in your project. By default, the <code class="language-plaintext highlighter-rouge">README.md</code> in your project’s root become the “homepage” of your project and it’ll be made available in the following URL: <a href="https://ontouml.github.io/project-template/">https://ontouml.github.io/YOUR-PROJECTS-NAME/</a>.</p>
+
+<p>Every other page’s URL will be a combination of this base URL, the markdown file’s name, and the name of the folders it is within.</p>
+
+<pre><code class="language-txt">about.md              &gt;   https://ontouml.github.io/YOUR-PROJECTS-NAME/about
+instructions.md       &gt;   https://ontouml.github.io/YOUR-PROJECTS-NAME/instructions
+tests/README.md       &gt;   https://ontouml.github.io/YOUR-PROJECTS-NAME/tests/
+tests/test-setup.md   &gt;   https://ontouml.github.io/YOUR-PROJECTS-NAME/tests/test-setup
+</code></pre>
+
+<p>Now everything is ready. Your project’s website will be updated shortly after you push your commits to the <code class="language-plaintext highlighter-rouge">main</code> branch. Enjoy!</p>
+
+<h2 id="hints-and-tricks">Hints and Tricks</h2>
+
+<h3 id="updating-configurations">Updating Configurations</h3>
+
+<p>Even though unnecessary, you may want to update a couple of variables in Jekyll’s configurations. If you want to learn more about them, have a look at <a href="https://jekyllrb.com/docs/configuration/options/">Jekyll’s instructions</a>.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">&lt;Your Project's Title&gt;</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">&lt;Your Project's Description&gt;</span>
+<span class="na">exclude</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s2">"</span><span class="s">&lt;folder</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">file</span><span class="nv"> </span><span class="s">that</span><span class="nv"> </span><span class="s">you</span><span class="nv"> </span><span class="s">don't</span><span class="nv"> </span><span class="s">want</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">part</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">your</span><span class="nv"> </span><span class="s">website&gt;"</span>
+</code></pre></div></div>
+
+<h3 id="testing-locally">Testing Locally</h3>
+
+<p>If you have Ruby installed in your machine, you can check your project’s website before it goes live. Just go to the project’s folder in your terminal and run the following command:</p>
+
+<div class="language-zsh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundler <span class="nb">install</span>   <span class="c"># run only the first time</span>
+bundler <span class="nb">exec </span>jekyll serve <span class="nt">-o</span>   <span class="c"># the '-o' flag asks Jekyll to automatically open the website in your default browser</span>
+</code></pre></div></div>
+
+<h3 id="using-html">Using HTML</h3>
+
+<p>Jekyll will build your site using not only markdown files in your repository, but HTML files as well. More interesting even, you can add snippets of HTML to your markdown files to boost them. For example, how about adding a video with auto-resizing?</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;iframe</span> <span class="na">style=</span><span class="s">"width: 100%; height: 400px;"</span>
+    <span class="na">src=</span><span class="s">"https://www.youtube.com/embed/rKFOEt8ogLw"</span>
+    <span class="na">title=</span><span class="s">"YouTube video player"</span>
+    <span class="na">frameborder=</span><span class="s">"0"</span>
+    <span class="na">allow=</span><span class="s">"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"</span>
+    <span class="na">allowfullscreen</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<div>
+  <div>
+  <iframe style="width: 100%; height: 400px;" src="https://www.youtube.com/embed/rKFOEt8ogLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" />
+</div>
+</div>
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/OntoUML/project-template">project-template</a> is maintained by <a href="https://github.com/OntoUML">OntoUML</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>

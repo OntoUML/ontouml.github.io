@@ -1,0 +1,7 @@
+theme: jekyll-theme-cayman
+destination: ./docs
+exclude:
+  - "./docs"
+#   - "<folder or file that you don't want to be part of your website>"
+# title: <Your Project's Title>
+# description: <Your Project's Description>

@@ -1,0 +1,22 @@
+name: GitHub Actions
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6 # Not needed with a .ruby-version file
+
+      - run: |
+          ls
+          bundle install
+          bundle exec jekyll build
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Jekyll build
