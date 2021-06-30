@@ -9,9 +9,10 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  trailingSlash: true,
   favicon: 'img/favicon.ico',
   organizationName: 'OntoUML', // Usually your GitHub org/user name.
-  projectName: 'OntoUML', // Usually your repo name.
+  projectName: 'ontouml.github.io', // Usually your repo name.
   themeConfig: {
     colorMode: {
       defaultMode: 'dark',
@@ -110,7 +111,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/OntoUML/ontouml-docs/edit/main/',
+            'https://github.com/OntoUML/ontouml.github.io/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
