@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'OntoUML',
   tagline: 'OntoUML libraries documentation',
-  url: 'https://ontouml-docs.netlify.app/',
+  url: 'https://dev.ontouml.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -96,7 +96,7 @@ module.exports = {
       //     ],
       //   },
       // ],
-      copyright: `Copyright © ${new Date().getFullYear()} OntoUML, Inc.`,
+      copyright: `OntoUML Community © ${new Date().getFullYear()}`,
     },
     prism: {
       theme: lightCodeTheme,
