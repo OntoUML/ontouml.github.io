@@ -7,7 +7,7 @@ hide_table_of_contents: true
 
 ## Introduction
 
-The `ontouml-js` project exists to meet the needs of developers in implementing OntoUML-based solution as services. This TypeScript module comprises a library designed to support the development of any OntoUML solution for OaaS, including an extensive API for model creation and manipulation, as well as serialization and de-serialization functionality. The `ontouml-js` currently supports the `ontouml-server` and all services currently provided by it. 
+The `ontouml-js` project exists to meet the needs of developers in implementing OntoUML-based solution as services. This TypeScript library that provides a collection of classes corresponding to OntoUML metamodel’s elements, and an extensive set of easy to use methodsto create,  modify,  and query OntoUML models efficiently. It also includes out-of-the-box support for serializing and deserializing models compliant with the `ontouml-schema`, as well as a validation function for such models. Moreover, `ontouml-js` provides classes and interfaces for the implementation of model intelligence services, including service options and issues
 
 ## Getting Start
 
