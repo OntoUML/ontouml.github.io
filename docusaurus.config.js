@@ -1,122 +1,141 @@
+// @ts-check
+// Note: type annotations allow type checking and IDEs autocompletion
+
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
-module.exports = {
-  title: 'OntoUML',
-  tagline: 'OntoUML libraries documentation',
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+  title: 'OntoUML.org - DEV',
+  tagline: 'Documentation for OntoUML projects on GitHub',
+  favicon: 'img/favicon.ico',
+  
+  // Set the production url of your site here
   url: 'https://dev.ontouml.org',
+  
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   trailingSlash: true,
-  favicon: 'img/favicon.ico',
+  
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
   organizationName: 'OntoUML', // Usually your GitHub org/user name.
   projectName: 'ontouml.github.io', // Usually your repo name.
-  themeConfig: {
-    colorMode: {
-      defaultMode: 'dark',
-    },
-    // algolia: {
-    //   apiKey: 'YOUR_API_KEY',
-    //   indexName: 'YOUR_INDEX_NAME',
 
-    //   // Optional: see doc section below
-    //   contextualSearch: true,
 
-    //   // Optional: see doc section below
-    //   appId: 'YOUR_APP_ID',
 
-    //   // Optional: Algolia search parameters
-    //   searchParameters: {},
 
-    //   //... other Algolia params
-    // },
-    navbar: {
-      hideOnScroll: true,
-      title: 'OntoUML',
-      logo: {
-        alt: 'OntoUML Logo',
-        src: 'img/logo.svg',
-      },
-      items: [
-        {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Documentation',
-        },
-        {
-          href: 'https://github.com/OntoUML',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
-    },
-    footer: {
-      style: 'dark',
-      // links: [
-      //   {
-      //     title: 'Docs',
-      //     items: [
-      //       {
-      //         label: 'Tutorial',
-      //         to: '/docs/intro',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'Community',
-      //     items: [
-      //       {
-      //         label: 'Stack Overflow',
-      //         href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-      //       },
-      //       {
-      //         label: 'Discord',
-      //         href: 'https://discordapp.com/invite/docusaurus',
-      //       },
-      //       {
-      //         label: 'Twitter',
-      //         href: 'https://twitter.com/docusaurus',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'More',
-      //     items: [
-      //       {
-      //         label: 'Blog',
-      //         to: '/blog',
-      //       },
-      //       {
-      //         label: 'GitHub',
-      //         href: 'https://github.com/OntoUML',
-      //       },
-      //     ],
-      //   },
-      // ],
-      copyright: `OntoUML Community © ${new Date().getFullYear()}`,
-    },
-    prism: {
-      theme: lightCodeTheme,
-      darkTheme: darkCodeTheme,
-    },
+  // Even if you don't use internalization, you can use this field to set useful
+  // metadata like html lang. For example, if your site is Chinese, you may want
+  // to replace "en" with "zh-Hans".
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
   },
+
   presets: [
     [
-      '@docusaurus/preset-classic',
-      {
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/OntoUML/ontouml.github.io/edit/main/',
+            'https://github.com/OntoUML/ontouml.github.io',
         },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      },
+      }),
     ],
   ],
+
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      // Replace with your project's social card
+      image: 'img/docusaurus-social-card.jpg',
+      navbar: {
+        title: 'OntoUML.org - DEV',
+        logo: {
+          alt: 'OntoUML.org Logo',
+          src: 'img/logo.svg',
+        },
+        items: [
+          {
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
+            label: 'Documentation',
+          },
+          {
+            href: 'https://github.com/OntoUML',
+            label: 'GitHub',
+            position: 'right',
+          },
+        ],
+      },
+      footer: {
+        style: 'dark',
+        links: [
+          // {
+          //   title: 'Docs',
+          //   items: [
+          //     {
+          //       label: 'Tutorial',
+          //       to: '/docs/intro',
+          //     },
+          //   ],
+          // },
+          // {
+          //   title: 'Community',
+          //   items: [
+          //     {
+          //       label: 'Stack Overflow',
+          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+          //     },
+          //     {
+          //       label: 'Discord',
+          //       href: 'https://discordapp.com/invite/docusaurus',
+          //     },
+          //     {
+          //       label: 'Twitter',
+          //       href: 'https://twitter.com/docusaurus',
+          //     },
+          //   ],
+          // },
+          {
+            title: 'More',
+            items: [
+              // {
+              //   label: 'Blog',
+              //   to: '/blog',
+              // },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/OntoUML/ontouml.github.io',
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © ${new Date().getFullYear()} OntoUML.org`,
+      },
+      prism: {
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
+      },
+    }),
 };
+
+module.exports = config;

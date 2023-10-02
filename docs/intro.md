@@ -1,26 +1,44 @@
 ---
 sidebar_position: 1
-hide_table_of_contents: true
 ---
 
-# Introduction
+# Welcome
 
-This page is an overview of the OntoUML documentation and related resources.
+The **OntoUML.org - DEV** is a website that aggregates user documentation for [OntoUML projects on GitHub](https://github.com/OntoUML). In this sense, each documentation includes both technical and normative details, as well as tutorials and user guides.
 
-### OntoUML Server
+Use the side panel to navigate to the project of your interest, or continue on this page to learn how to contribute to this website.
 
-The OntoUML Server is a web service project designed to expose OntoUML-based features on the Web.
 
-[Getting Start](/docs/ontouml-server/intro/)
+## Contributing with documentation
 
-### OntoUML JS
+The **OntoUML.org - DEV** website is developed using the [Docusaurus](https://docusaurus.io/) framework, an open source documentation generator built on top of [React](https://react.dev/)/Javascript.
 
-Javascript library for manipulating OntoUML models and their serialization into ontouml-schema compliant JSON files.
+Even though knowledge on these technologies is welcome, it is not strictly necessary, since all pages are written using Markdown files.
 
-[Getting Start](/docs/ontouml-js/intro/)
+### What you'll need
 
-### OntoUML Visual Paradigm Plugin
+- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
+  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
-Plugin for Visual Paradigm that enables this CASE tool with OntoUML capabilities harnessing OntoUML Server's web services.
+## Start the website
 
-[Getting Start](/docs/ontouml-vp-plugin/intro/)
+On your first execution, you will need to install all project dependencies using:
+
+```bash
+cd ontouml.github.io
+npm ci
+```
+
+The `cd` command changes the directory you're working with. Then the `npm ci` command install the necessary dependencies in the appropriate versions.
+
+Once all dependencies are installed, you can run a development server:
+
+```bash
+npm run start
+```
+
+The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+
+The documentation of each project must be contained inside a dedicated folder within `docs/`.
+
+Once finished your contributions, open a pull request to the [ontouml.github.io](https://github.com/OntoUML/ontouml.github.io) repository for deployment.
