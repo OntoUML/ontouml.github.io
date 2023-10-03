@@ -1,8 +1,16 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # Definitions
+
+## `ModelElement` {#ModelElement}
+
+## `Diagram` {#Diagram}
+
+## `View` {#View}
+
+## `Shape` {#Shape}
 
 ## `NamedElement` {#NamedElement}
 

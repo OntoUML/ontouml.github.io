@@ -1,9 +1,0 @@
-{
-  "label": "User Guide",
-  "position": 2,
-  "collapsed": false,
-  "link": {
-    "type": "generated-index",
-    "description": "A user guide for OntoUML developers to understand the metamodel in its uses and structure."
-  }
-}
