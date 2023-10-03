@@ -73,11 +73,23 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+          // {
+          //   type: 'doc',
+          //   docId: 'intro',
+          //   position: 'left',
+          //   label: 'Documentation',
+          // },
           {
-            type: 'doc',
-            docId: 'intro',
+            type: 'docSidebar',
             position: 'left',
-            label: 'Documentation',
+            sidebarId: 'meta',
+            label: 'Metamodel',
+          },
+          {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'schema',
+            label: 'Schema',
           },
           {
             href: 'https://github.com/OntoUML',
